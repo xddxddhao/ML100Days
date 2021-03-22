@@ -1,0 +1,5 @@
+import numpy as np
+a=np.arange(10).reshape(2,5)
+a
+print(a.dtype)
+print(is_dtype(a, 'int32'))
