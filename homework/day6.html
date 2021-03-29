@@ -14259,11 +14259,12 @@ a.anchor-link {
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">a</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">a</span><span class="o">=</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">a</span><span class="o">.</span><span class="n">min</span><span class="p">())</span><span class="o">/</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">-</span><span class="n">a</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
 <span class="n">a</span>
 </pre></div>
 
@@ -14280,17 +14281,58 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([[0.7061637 , 0.88449127, 0.75405974, 0.90929228, 0.27061551],
-       [0.70156097, 0.3341573 , 0.45982509, 0.991678  , 0.14745269],
-       [0.44808924, 0.86615937, 0.51646125, 0.89192398, 0.14870612],
-       [0.04369221, 0.66567731, 0.60309369, 0.3661202 , 0.50153688],
-       [0.83315111, 0.48176165, 0.62556052, 0.78213431, 0.04202341]])</pre>
+<pre>array([[0.08875864, 0.35875004, 0.78613475, 0.46731113, 0.88261209],
+       [0.52548684, 0.25986979, 0.89200394, 0.74211035, 0.5605904 ],
+       [0.80651938, 0.57106523, 0.74738479, 0.43079069, 0.        ],
+       [0.00346684, 0.94383266, 1.        , 0.01802264, 0.70117097],
+       [0.77058253, 0.4758455 , 0.939135  , 0.40999015, 0.84174091]])</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">a</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">a</span><span class="p">[</span><span class="n">a</span><span class="o">.</span><span class="n">argmax</span><span class="p">()]</span><span class="o">=-</span><span class="mi">1</span>
+<span class="n">a</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>array([ 0.0715136 ,  0.26573974,  0.75982415,  0.60394009,  0.02688418,
+       -1.        ,  0.6175445 ,  0.19329675,  0.19691793,  0.72978382])</pre>
 </div>
 
 </div>
